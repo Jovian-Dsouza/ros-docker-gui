@@ -88,6 +88,9 @@ RUN echo "export ROSLAUNCH_SSH_UNKNOWN=1" >> /root/.bashrc
 RUN echo "source /opt/ros/kinetic/setup.zsh" >> /root/.zshrc
 RUN echo "export ROSLAUNCH_SSH_UNKNOWN=1" >> /root/.zshrc
 
+#install canberra libraries
+RUN apt-get update && apt-get install libcanberra-gtk0 libcanberra-gtk-module -y
+
 # Entry script - This will also run terminator
 COPY assets/entrypoint_setup.sh /
 ENTRYPOINT ["/entrypoint_setup.sh"]

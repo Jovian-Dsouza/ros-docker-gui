@@ -1,23 +1,24 @@
 [global_config]
-  title_receive_bg_color = "#64d8ff"
   enabled_plugins = TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
+  title_receive_bg_color = "#64d8ff"
   title_transmit_bg_color = "#15b0dc"
 [keybindings]
-[profiles]
-  [[default]]
-    use_system_font = False
-    background_darkness = 0.69
-    background_type = transparent
-    background_image = /root/.config/terminator/background.png
-    scroll_background = False
-    font = Monospace 12
-    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_color = "#2e3436"
+    background_darkness = 0.9
+    background_image = None
+    font = Monospace 12
+    foreground_color = "#eeeeec"
+    icon_bell = False
+    palette = "#282828:#cc241d:#4e9a06:#d79921:#458588:#b16286:#689d6a:#d3d7cf:#928374:#fb4934:#8ae234:#fabd2f:#83a598:#d3869b:#8ec07c:#eeeeec"
+    use_system_font = False
